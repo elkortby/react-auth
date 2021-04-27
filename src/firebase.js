@@ -1,13 +1,13 @@
 import firebase from 'firebase'
 import 'firebase/auth'
 
-const app = firebase.initalizeApp({
-    apiKey: process.env.REACT_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_FIREBASE_APP_ID
+const app = firebase.initializeApp({
+    apiKey: "AIzaSyBXMIOvzzRzGRzJmGysmfQYYr1k3F-IxJY",
+    authDomain: "osafreactauth.firebaseapp.com",
+    projectId: "osafreactauth",
+    storageBucket: "osafreactauth.appspot.com",
+    messagingSenderId: "35460667470",
+    appId: "1:35460667470:web:50822bced1bfb33c070b1f"
 })
 
 export const auth = app.auth() 

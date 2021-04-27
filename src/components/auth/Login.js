@@ -1,31 +1,26 @@
 import React, { useRef, useState } from 'react'
 import { Card, Form, Button, Alert, Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { useAuth } from './AuthContext'
 
-export default function Signup() {
+export default function Login() {
 
     const emailRef = useRef()
     const passwordRef = useRef()
-    const cPasswordRef = useRef()
-    const { signUp } = useAuth()
+    const { login } = useAuth()
     const [error, setError] = useState('')
     const [loading, setLoading] = useState(false)
+    const history = useHistory()
 
     async function handleSubmit(e) {
-        e.preventDefault()
-
-        if (passwordRef.current.value !== 
-            cPasswordRef.current.value) {
-                return setError('Password not match')
-        }
-        
+        e.preventDefault()       
         try {
             setError("")
             setLoading(true)
-            await signUp(emailRef.current.value, passwordRef.current.value)
+            await login(emailRef.current.value, passwordRef.current.value)
+            history.push('/dashboard')
         } catch {
-            setError('Failed to create an account')
+            setError('Failed to login')
             setLoading(false)
         }
 
@@ -41,7 +36,7 @@ export default function Signup() {
                 <div className="w-100" style={{ maxWidth: "400px" }}>
                     <Card>
                         <Card.Body>
-                            <h2 className="text-center mb-4">Sign Up</h2>
+                            <h2 className="text-center mb-4">Login</h2>
                             { error && <Alert variant="danger">{error}</Alert>}
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group id="email">
@@ -52,18 +47,17 @@ export default function Signup() {
                                     <Form.Label>Password</Form.Label>
                                     <Form.Control type="password" required ref={passwordRef} />
                                 </Form.Group>
-                                <Form.Group id="cPassword">
-                                    <Form.Label>Confirm Password</Form.Label>
-                                    <Form.Control type="password" required ref={cPasswordRef} />
-                                </Form.Group>
                                 <Button disabled={loading} variant="dark" className="w-100" type="submit">
-                                    Sign Up
+                                    Login
                                 </Button>
                             </Form>
+                            <div className="w-100 text-center mt-3">
+                                <Link to="/forgot-password" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Forgot Password?</b></Link>
+                            </div>
                         </Card.Body>
                     </Card>
                     <div className="w-100 text-center mt-2">
-                        Already have an account? <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Log In</b></Link>
+                        don't have an account? <Link to="/signup" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Sign Up</b></Link>
                     </div>
                 </div>
             </Container>
