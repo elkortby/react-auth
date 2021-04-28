@@ -22,7 +22,7 @@ export default function Menubar() {
     return (
         <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
             <Navbar.Brand href="/"><img src={Logo} alt="Logo" width="55"/></Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"><h6><b>Menu</b></h6></Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto"></Nav>
                 <Nav>
