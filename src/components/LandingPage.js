@@ -39,8 +39,8 @@ export default function LandingPage() {
                     <Row >
                         <Col className="mt-5">
                             <Link to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h5>About</h5></Link>
-                            <Link to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h5>Blog</h5></Link>
-                            <Link to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h5>Contact</h5></Link>
+                            <Link className="m-1" to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h5>Blog</h5></Link>
+                            <Link className="m-1" to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h5>Contact</h5></Link>
                         </Col>
                         <Col className="mt-5" style={{ color: '#cccecf'}} >
                             <h4>Contact Us</h4>
