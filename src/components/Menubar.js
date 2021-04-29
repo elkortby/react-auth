@@ -18,8 +18,8 @@ export default function Menubar() {
         try {
             await logout()
             history.push('/login')
-        } catch {
-
+        } catch (err) {
+            console.log(err)
         }
     }
 
