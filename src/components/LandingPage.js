@@ -48,7 +48,7 @@ export default function LandingPage() {
                             <p>Mob: +213 5 50 89 43 48</p>
                         </Col>
                         <Col className="mt-5">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.993778786601!2d2.7553987164594345!3d36.263929980062656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128f6b0b9bb9e209%3A0x618a7ca8e554e860!2sSARL%20OSAF%20TECHNOLOGIES!5e0!3m2!1sen!2sdz!4v1619661969218!5m2!1sen!2sdz" ></iframe>
+                            <iframe title="sarl osaf technologies in google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3216.993778786601!2d2.7553987164594345!3d36.263929980062656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128f6b0b9bb9e209%3A0x618a7ca8e554e860!2sSARL%20OSAF%20TECHNOLOGIES!5e0!3m2!1sen!2sdz!4v1619661969218!5m2!1sen!2sdz" ></iframe>
                         </Col>
                     </Row>
                 </Container>
