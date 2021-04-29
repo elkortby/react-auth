@@ -29,9 +29,10 @@ export default function Login() {
     
     return (
         <>
-            <Container 
+            <Container
+                fluid={true} 
                 className="d-flex align-items-center justify-content-center" 
-                style={{ minHeight: "100vh" }}
+                style={{ minHeight: "100vh", backgroundColor: '#343a40' }}
             >
                 <div className="w-100" style={{ maxWidth: "400px" }}>
                     <Card>
@@ -54,11 +55,11 @@ export default function Login() {
                             <div className="w-100 text-center mt-3">
                                 <Link to="/forgot-password" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Forgot Password?</b></Link>
                             </div>
+                            <div className="w-100 text-center mt-2">
+                                don't have an account? <Link to="/signup" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Sign Up</b></Link>
+                            </div>
                         </Card.Body>
                     </Card>
-                    <div className="w-100 text-center mt-2">
-                        don't have an account? <Link to="/signup" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Sign Up</b></Link>
-                    </div>
                 </div>
             </Container>
         </>

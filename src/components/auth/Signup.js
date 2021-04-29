@@ -35,8 +35,9 @@ export default function Signup() {
     return (
         <>
             <Container 
+                fluid={true}
                 className="d-flex align-items-center justify-content-center" 
-                style={{ minHeight: "100vh" }}
+                style={{ minHeight: "100vh", backgroundColor: '#343a40' }}
             >
                 <div className="w-100" style={{ maxWidth: "400px" }}>
                     <Card>
@@ -60,11 +61,11 @@ export default function Signup() {
                                     Sign Up
                                 </Button>
                             </Form>
+                            <div className="w-100 text-center mt-3">
+                                Already have an account? <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Log In</b></Link>
+                            </div>
                         </Card.Body>
                     </Card>
-                    <div className="w-100 text-center mt-2">
-                        Already have an account? <Link to="/login" style={{ color: 'inherit', textDecoration: 'inherit' }}><b>Log In</b></Link>
-                    </div>
                 </div>
             </Container>
         </>
