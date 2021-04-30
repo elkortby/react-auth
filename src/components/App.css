@@ -1,0 +1,13 @@
+.App {
+    font-family: 'Helvetica';
+}
+.Heading {
+    color: #750643;
+}
+.Light-Font {
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+.Spacing {
+    letter-spacing: 1px;
+}
