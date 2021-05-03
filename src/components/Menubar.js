@@ -37,9 +37,9 @@ export default function Menubar() {
                     </NavDropdown>
                 </> : <>
                     <Nav className="ml-2">
-                        {/* <Nav.Link href="/">About</Nav.Link>
-                        <Nav.Link href="/">Blog</Nav.Link>
-                        <Nav.Link href="/">Contact</Nav.Link> */}
+                        {/* <Nav.Link href="/">About</Nav.Link> */}
+                        {/* <Nav.Link href="/blog">Blog</Nav.Link> */}
+                        {/* <Nav.Link href="/">Contact</Nav.Link> */}
                     </Nav>
                     <Nav className="mr-auto"></Nav>
                     <Nav>

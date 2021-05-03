@@ -70,11 +70,11 @@ export default function LandingPage() {
                 <Col className="mt-5">
                     <div className="w-100"  style={{ maxWidth: "400px" }}>
                         <h1><b>SARL OSAF TECHNOLOGIES</b></h1>
-                        <p>
+                        <p className="Light-Font">
                             Integrate human and artificial intelligence to
                             develop products that serve people's well-being.
                         </p>
-                        <Button size="lg" variant="dark">Learn More</Button>
+                        <Button size="md" variant="dark">Learn More</Button>
                     </div>
                 </Col>
                 <Col style={{ minWidth: "400px" }}>
@@ -83,27 +83,23 @@ export default function LandingPage() {
             </Row>
         </Container>
         <section
-            className="pt-5"
             style={{ backgroundColor: '#750643', minHeight: "150px", color: '#ffffff' }}
         >
-            <div className="text-center">
-                <h1><b>The Future is smart</b></h1>
-            </div>
+            <Container className="p-5">
+                <Row>
+                    <Col md={4} lg={3} className="pt-5">
+                        <p className="pt-2 Light-Font">OUR MISSION ———</p>
+                    </Col>
+                    <Col md={8} lg={7}>
+                        <h1><b>Artificial Intelligence...?</b></h1>
+                        <p className="Light-Font">"Intelligence is the ability to avoid doing work, yet getting the work done." —Linus Torvalds: The Linux Founder. </p>
+                        <p className="Light-Font">Technologies are all about serving humanity and people's well-being, so we made our mission clear, to use a tool that is avilable right now, which is artificial intelligence, to develop products that are part of the future.</p>
+                        <p className="Light-Font">The mission is not easy, it requires a lot of smart brains coding and beliving in the team work, integrating the modern computing technologies to create the future of people's well-being.</p>
+                        <h6 className="Spacing"><b>Welcome to OSAF TECHNOLOGIES</b></h6>
+                    </Col>
+                </Row>
+            </Container>
         </section>
-        <Container className="p-5">
-            <Row>
-                <Col md={4} lg={3} className="pt-5">
-                    <p className="pt-2 Light-Font">OUR MISSION ———</p>
-                </Col>
-                <Col md={8} lg={7}>
-                    <h1><b>Artificial Intelligence...?</b></h1>
-                    <p className="Light-Font">"Intelligence is the ability to avoid doing work, yet getting the work done." —Linus Torvalds: The Linux Founder. </p>
-                    <p className="Light-Font">Technologies are all about serving humanity and people's well-being, so we made our mission clear, to use a tool that is avilable right now, which is artificial intelligence.</p>
-                    <p className="Light-Font">The mission is not easy, it requires a lot of smart brains and coders all working and beliving in the team work, integrating the modern computing technologies to create the future of people's well-being.</p>
-                    <h6 className="Spacing"><b>Welcome to OSAF TECHNOLOGIES</b></h6>
-                </Col>
-            </Row>
-        </Container>
         <section style={{ backgroundColor: '#343a40', minHeight: "250px" }}>
             <Container>
                 <Row >
