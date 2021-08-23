@@ -25,7 +25,7 @@ export default function Menubar() {
     }
 
     return (
-        <Navbar collapseOnSelect style={{ backgroundColor: '#000000'}} expand="md" bg="white" variant="dark">
+        <Navbar collapseOnSelect style={{ backgroundColor: '#750643'}} expand="md" bg="white" variant="dark">
             <Navbar.Brand href="/"><img src={Logo} alt="Logo" width="40"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"><h6><b>Menu</b></h6></Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
