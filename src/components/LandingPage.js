@@ -69,12 +69,12 @@ export default function LandingPage() {
             <Row>
                 <Col className="mt-5">
                     <div className="w-100"  style={{ maxWidth: "400px" }}>
-                        <h1><b>SARL OSAF TECHNOLOGIES</b></h1>
-                        <p className="Light-Font">
+                        <h1 className="b"><b>SARL OSAF TECHNOLOGIES</b></h1>
+                        <p className="Light-Font Heading">
                             Integrate human and artificial intelligence to
                             develop products that serve people's well-being.
                         </p>
-                        <Button size="md" variant="dark">Learn More</Button>
+                        <Button size="md" variant="dark" onClick={() => window.location.href = "https://www.facebook.com/osaftechnologies"}>Learn More</Button>
                     </div>
                 </Col>
                 <Col style={{ minWidth: "400px" }}>
@@ -104,9 +104,9 @@ export default function LandingPage() {
             <Container>
                 <Row >
                     <Col className="mt-5">
-                        <Link to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h4>About</h4></Link>
-                        <Link className="m-1" to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h4>Blog</h4></Link>
-                        <Link className="m-1" to="/" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h4>Contact</h4></Link>
+                        <Link to="https://www.facebook.com/osaftechnologies" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h4>Facebook</h4></Link>
+                        <Link className="m-1" to="https://www.instagram.com/osaftech" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h4>Instagram</h4></Link>
+                        <Link className="m-1" to="https://www.linkedin.com/company/osaftechnologies" style={{ color: '#cccecf', textDecoration: 'inherit' }}><h4>LinkedIn</h4></Link>
                     </Col>
                     <Col className="mt-5" style={{ color: '#cccecf'}} >
                         <h4>Contact Us</h4>

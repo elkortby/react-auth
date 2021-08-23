@@ -6,7 +6,8 @@ import { SiFacebook } from 'react-icons/si'
 import { SiYoutube } from 'react-icons/si'
 import { SiInstagram } from 'react-icons/si'
 import { SiLinkedin } from 'react-icons/si'
-import Logo from './logo.png'
+// import Logo from './logo.png'
+import Logo from './redlogo.png'
 import Ouss from './ouss.jpg'
 
 export default function Menubar() {
@@ -24,7 +25,7 @@ export default function Menubar() {
     }
 
     return (
-        <Navbar collapseOnSelect style={{ backgroundColor: '#000000'}} expand="md" bg="dark" variant="dark">
+        <Navbar collapseOnSelect style={{ backgroundColor: '#000000'}} expand="md" bg="white" variant="dark">
             <Navbar.Brand href="/"><img src={Logo} alt="Logo" width="40"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav"><h6><b>Menu</b></h6></Navbar.Toggle>
             <Navbar.Collapse id="responsive-navbar-nav">
@@ -43,10 +44,10 @@ export default function Menubar() {
                     </Nav>
                     <Nav className="mr-auto"></Nav>
                     <Nav>
-                        <Nav.Link href="https://www.facebook.com/osaftechnologies"><SiFacebook size={24}/></Nav.Link>
-                        <Nav.Link href="https://www.youtube.com/channel/UCw8uFFQM7qU0uc_dJNePljA"><SiYoutube size={24}/></Nav.Link>
-                        <Nav.Link href="https://www.instagram.com/osaftech"><SiInstagram size={24}/></Nav.Link>
-                        <Nav.Link href="https://www.linkedin.com/company/osaftechnologies"><SiLinkedin size={24}/></Nav.Link>
+                        <Nav.Link href="https://www.facebook.com/osaftechnologies"><SiFacebook size={24} color="#750643"/></Nav.Link>
+                        <Nav.Link href="https://www.youtube.com/channel/UCw8uFFQM7qU0uc_dJNePljA"><SiYoutube size={24} color="#750643"/></Nav.Link>
+                        <Nav.Link href="https://www.instagram.com/osaftech"><SiInstagram size={24} color="#750643"/></Nav.Link>
+                        <Nav.Link href="https://www.linkedin.com/company/osaftechnologies"><SiLinkedin size={24} color="#750643"/></Nav.Link>
                     </Nav>
                 </>
             }
